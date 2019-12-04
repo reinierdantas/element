@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<head>
+    <!-- Metas -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Element the game website">
+    <meta name="author" content="Reinier Dantas">
+    <meta name="robots" content="nofollow,noindex">
+    <!-- Tittles -->
+    <title>Elements - Game</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- Body -->
+<body>
+    <!-- Modal -->
+    <div class="modal fade noSelect" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="modalLoginLabel">Entre na Sua Conta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group form-modal">
+                            <label for="email" class="col-form-label">Email</label>
+                            <input type="email" required class="form-control" id="email">
+                        </div>
+                        <div class="form-group form-modal">
+                            <label for="senha" class="col-form-label">Senha</label>
+                            <input type="password" required class="form-control" id="senha">
+                        </div>
+                        <button class="btn btn-primary">Entrar na conta</button>
+                        <small class="form-text form-modal">Esqueceu a senha? <a href="index.html">Clique
+                                aqui</a></small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light box-shadow noSelect">
+        <a href="index.html" class="navbar-brand logo text-white"><img src="img/logo.png" alt="Logo element">ELEMENT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div role="navigation" class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto text-center">
+                <li class="nav-item"><a class="nav-link text-white" href="#novidades">Novidades</a></li>
+                <li class="nav-item dropdown">
+                    <a class=" text-white nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Classes</a>
+                    <div class=" bg-light dropdown-menu text-center text-md-left" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item branco" href="#classes"><i class="fas fa-sun"></i> Clérigo </a>
+                        <a class="dropdown-item azul" href="#classes"><i class="fas fa-tint"></i> Arcanista</a>
+                        <a class="dropdown-item preto" href="#classes"><i class="fas fa-skull"></i> Necromante</a>
+                        <a class="dropdown-item vermelho" href="#classes"><i class="fab fa-gripfire"></i> Piromante</a>
+                        <a class="dropdown-item verde" href="#classes"><i class="fas fa-tree"></i> Guerreiro</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="#download">Download</a></li>
+                <li class="nav-item"><a class="nav-link text-white" data-toggle="modal" data-target="#modalLogin"
+                        href="#">Login</a></li>
+                <li class="nav-item"><a class="btn btn-primary" href="#">Inscreva-se</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Intro / carrousel e chamada com email -->
+    <section class="container-fluid noSelect">
+        <div class="row bg-dark text-white">
+            <!-- carousel -->
+            <div class="col-sm p-0">
+                <div id="caroulselCidades" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#caroulselCidades" data-slide-to="0" class="active"></li>
+                        <li data-target="#caroulselCidades" data-slide-to="1"></li>
+                        <li data-target="#caroulselCidades" data-slide-to="2"></li>
+                        <li data-target="#caroulselCidades" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class=" carousel-img d-block w-100" src="img/call/call1.jpg" alt="First slide">
+                            <div class="carousel-caption d-none d-block">
+                                <span class="h1 font">Explore Ravnica</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class=" carousel-img d-block w-100" src="img/call/call2.jpg" alt="Second slide">
+                            <div class="carousel-caption d-none d-block">
+                                <span class="h1 font">Combate baseado em rpg</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="carousel-img d-block w-100" src="img/call/call3.jpg" alt="Third slide">
+                            <div class="carousel-caption d-none d-block">
+                                <span class="h1 font">Mundo imersivo</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="carousel-img d-block w-100" src="img/call/call5.jpg" alt="Third slide">
+                            <div class="carousel-caption d-none d-block">
+                                <a href="#download" class="btn btn-primary my-4 text-uppercase btn-lg">Jogue Agora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#caroulselCidades" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#caroulselCidades" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+            </div>
+    </section>
+    <!-- Novidades -->
+    <section class="bg-dark text-center pt-5 noSelect" id="novidades">
+        <div class="container">
+            <div class="my-5">
+                <h2 class="text-primary display-4 font">NOVIDADES <img src="img/icones/planeicon.png" class="planeicon"
+                        alt="icone planeswalker"></h2>
+                <p class="text-white h6 text-uppercase font">Fique por dentro do conteudo do game</p>
+            </div>
+            <div class="pb-5">
+                <div class="text-primary col-lg mb-5">
+                    <div class="mb-0">
+                        <img class="att d-block m-auto" src="img/video/video.jpg" style="cursor:pointer;" type="button"
+                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne" alt="Sombras em Innistrad">
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#novidades">
+                        <h2 class="h2 font">Sombras em Innistrad</h2>
+                        <div class="embed-responsive embed-responsive-16by9 w-100 m-auto rounded">
+                            <video class="embed-responsive-item" controls src="videos/video3.mp4"></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-primary col-lg my-5">
+                    <div class="mb-0">
+                        <img class="att d-block m-auto" src="img/video/video3.jpg" style="cursor:pointer;" type="button"
+                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+                            aria-controls="collapseThree" alt="Guildas de Ravnica">
+                    </div>
+                    <div id="collapseThree" class="collapse hide" data-parent="#novidades">
+                        <h2 class="h2 font">Guildas de Ravnica</h2>
+                        <div class="embed-responsive embed-responsive-16by9 w-100 m-auto rounded">
+                            <video class="embed-responsive-item" controls src="videos/video2.mp4"></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-primary col-lg mt-5">
+                    <div class="mb-0">
+                        <img class="att d-block m-auto" src="img/video/video2.jpg" style="cursor:pointer;" type="button"
+                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                            aria-controls="collapseTwo" alt="Guerra da centelha">
+                    </div>
+                    <div id="collapseTwo" class="collapse hide" data-parent="#novidades">
+                        <h2 class="h2 font">Guerra da centelha</h2>
+                        <div class="embed-responsive embed-responsive-16by9 w-100 m-auto rounded">
+                            <video class="embed-responsive-item" controls src="videos/video1.mp4"></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Classes -->
+    <section class="bg-dark text-center py-5 noSelect" id="classes">
+        <div class="container">
+            <div class="my-5">
+                <h2 class="text-primary display-4 font">CLASSES <img src="img/icones/planeicon.png" class="planeicon"
+                        alt="icone planeswalker"></h2>
+                <p class="text-white h6 text-uppercase font">escolha seu destino</p>
+            </div>
+            <div class="row">
+                <div class="class-lista pt-5">
+                    <ul class=" d-flex m-auto justify-content-center nav nav-pills elements-icon" id="pills-tab"
+                        role="tablist">
+                        <li>
+                            <a class="active" id="pills-branco-tab" data-toggle="pill" href="#pills-branco" role="tab"
+                                aria-controls="pills-branco" aria-selected="true"><img class="icone-classe white"
+                                    src="img/icones/branco.png" alt="elemento branco"></a>
+                        </li>
+                        <li>
+                            <a id="pills-azul-tab" data-toggle="pill" href="#pills-azul" role="tab"
+                                aria-controls="pills-azul" aria-selected="true"><img class="icone-classe"
+                                    src="img/icones/azul.png" alt="elemento azul"></a>
+                        </li>
+                        <li>
+                            <a id="pills-preto-tab" data-toggle="pill" href="#pills-preto" role="tab"
+                                aria-controls="pills-preto" aria-selected="true"><img class="icone-classe black"
+                                    src="img/icones/preto.png" alt="elemento preto"></a>
+                        </li>
+                        <li>
+                            <a id="pills-vermelho-tab" data-toggle="pill" href="#pills-vermelho" role="tab"
+                                aria-controls="pills-vermelho" aria-selected="true"><img class="icone-classe"
+                                    src="img/icones/vermelho.png" alt="elemento vermelho"></a>
+                        </li>
+                        <li>
+                            <a id="pills-verde-tab" data-toggle="pill" href="#pills-verde" role="tab"
+                                aria-controls="pills-verde" aria-selected="true"><img class="icone-classe"
+                                    src="img/icones/verde.png" alt="elemento verde"></a>
+                        </li>
+                    </ul>
+                    <div class=" tab-content text-center m-auto pt-5" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-branco" role="tabpanel"
+                            aria-labelledby="pills-branco-tab">
+                            <img src="img/classes/clerigo.jpg" class="class-planeswalker rounded" alt="Clerigo">
+                            <h2 class="font text-white">CLERIGO</h2>
+                        </div>
+                        <div class="tab-pane fade" id="pills-azul" role="tabpanel" aria-labelledby="pills-azul-tab">
+                            <img src="img/classes/arcanista.jpg" class="class-planeswalker rounded" alt="Arcanista">
+                            <h2 class="font" style="color: #007bff ;">ARCANISTA</h2>
+                        </div>
+                        <div class="tab-pane fade" id="pills-preto" role="tabpanel" aria-labelledby="pills-preto-tab">
+                            <img src="img/classes/warlock.jpg" class="class-planeswalker rounded" alt="Necromante">
+                            <h2 class="font" style="color: #79015f;">NECROMANTE</h2>
+                        </div>
+                        <div class="tab-pane fade" id="pills-vermelho" role="tabpanel"
+                            aria-labelledby="pills-vermelho-tab">
+                            <img src="img/classes/piromante.jpg" class="class-planeswalker rounded" alt="Piromante">
+                            <h2 class="font" style="color: #dc3545;">PIROMANTE</h2>
+                        </div>
+                        <div class="tab-pane fade" id="pills-verde" role="tabpanel" aria-labelledby="pills-verde-tab">
+                            <img src="img/classes/warrior.jpg" class="class-planeswalker rounded" alt="Guerreiro">
+                            <h2 class="font" style="color: #28a745;">GUERREIRO</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Download  e requisitos-->
+    <section id="download" class="bg-dark text-center py-5 noSelect">
+        <div class="container">
+            <div class="my-5">
+                <h2 class="text-primary display-4 font">DOWNLOAD <img src="img/icones/planeicon.png" class="planeicon"
+                        alt="icone planeswalker"></h2>
+                <p class="text-white h6 text-uppercase font">baixe o seu jogo aqui</p>
+            </div>
+            <div class="row justify-content-center py-5">
+                <div class="dropdown m-5">
+                    <button class="btn btn-lg btn-secondary dropdown-toggle" type="button" id="baixar"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Baixar Cliente - .exe
+                    </button>
+                    <div class="dropdown-menu w-100 bg-primary mt-1" aria-labelledby="baixar">
+                        <a class="dropdown-item" href="#download">Download x32</a>
+                        <a class="dropdown-item" href="#download">Download x64</a>
+                    </div>
+                </div>
+                <div class="dropdown m-5">
+                    <button class="btn btn-lg btn-secondary dropdown-toggle" type="button" id="baixar"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Baixar Cliente - Torrent
+                    </button>
+                    <div class="dropdown-menu w-100 bg-primary mt-1" aria-labelledby="baixar">
+                        <a class="dropdown-item" href="#download">Download x32</a>
+                        <a class="dropdown-item" href="#download">Download x64</a>
+                    </div>
+                </div>
+                <div class="col-auto py-5">
+                    <table class="table-responsive table table-borderless text-white text-left">
+                        <h2 class="font text-white text-uppercase">Requisitos Mínimos / Recomendados</h2>
+                        <thead>
+                            <tr class="text-primary">
+                                <th scope="col">Categoria</th>
+                                <th scope="col">Mínimo</th>
+                                <th scope="col">Recomendado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Processador</th>
+                                <td>Intel Core i3</td>
+                                <td>Intel Core i5</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Disco</th>
+                                <td>Instalação 27gb <br><br> Após Instalação Aprox. 27Gb</td>
+                                <td>Instalação 27gb <br><br> Após Instalação Aprox. 27Gb</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Memoria</th>
+                                <td>4GB RAM</td>
+                                <td>8GB RAM</td>
+                            </tr>
+                            <th scope="row">Placa de video</th>
+                            <td>GTS 250 / GeForce 9800 GTX <br><br> Radeon HD 3870 X2</td>
+                            <td>Nvidia GTX 970 <br><br> AMD RX 480</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer e redes sociais -->
+    <footer class="bg-light noSelect">
+        <div class="container font">
+            <div class="row py-4">
+                <div class="col-lg-3 col-sm">
+                    <p class="h6  text-primary">NOVIDADES</p>
+                    <ul class="list-unstyled">
+                        <li><a class="text-dark" href="#novidades">Sobras em Innistrad</a></li>
+                        <li><a class="text-dark" href="#novidades">Guildas de Ravnica</a></li>
+                        <li><a class="text-dark" href="#novidades">Guerra da centelha</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm">
+                    <p class="h6 text-primary">CLASSES</p>
+                    <ul class="list-unstyled">
+                        <li><a class="text-dark" href="#classes">Clerigo</a></li>
+                        <li><a class="text-dark" href="#classes">Arcanista</a></li>
+                        <li><a class="text-dark" href="#classes">Necromante</a></li>
+                        <li><a class="text-dark" href="#classes">Piromante</a></li>
+                        <li><a class="text-dark" href="#classes">Guerreiro</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm">
+                    <p class="h6 text-primary">DADOS DE CONTATO</p>
+                    <ul class="list-unstyled text-secondary">
+                        <li>element@element.com.br</li>
+                        <li>De Seg. à Sex. das 8h às 18h</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm">
+                    <p class="h6 text-primary">REDES SOCIAIS</p>
+                    <ul class="list-unstyled">
+                        <li><a class="btn btn-outline-secondary my-1 btn-sm btn-block" href="#"
+                                style="max-width: 140px;">Facebook</a></li>
+                        <li><a class="btn btn-outline-secondary my-1 btn-sm btn-block" href="#"
+                                style="max-width: 140px;">Twitter</a></li>
+                        <li><a class="btn btn-outline-secondary my-1 btn-sm btn-block" href="#"
+                                style="max-width: 140px;">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3 bg-dark">
+            <p class="mb-0 text-white">Projeto realidado apenas para fins de portifolios.</p>
+            <p class="small mb-0 text-white">Os direitos das imagens, personagens e videos pertencem <a
+                    class="text-primary" href="https://company.wizards.com/" target="_blank">wizards of the coast</a> e
+                <a class="text-primary" href="https://products.hasbro.com/pt-br" target="_blank">Hasbro</a></p>
+            <p class="small mb-0 text-white">The copyright rights of pictures, characters and videos belongs to <a
+                    class="text-primary" href="https://company.wizards.com/" target="_blank">wizards of the coast</a>
+                and <a class="text-primary" href="https://products.hasbro.com/pt-br" target="_blank">Hasbro</a></p>
+        </div>
+    </footer>
+    <!-- Scripts e icones -->
+    <script src="https://kit.fontawesome.com/44db623e8d.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="app/popper.min.js"></script>
+    <script type="text/javascript" src="app/bootstrap.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
+</body>
+
+</html>
