@@ -118,7 +118,6 @@ ul, li{
     }
 }
 @media(max-width:576px){
-
     .navbar-mobile ul{
         background: #343a40;
         padding-bottom: 20px;
